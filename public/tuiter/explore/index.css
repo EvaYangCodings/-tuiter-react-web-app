@@ -1,0 +1,22 @@
+.container {
+    background-color: black;
+    height: 100%;
+}
+
+.section {
+    color: white;
+    font-weight: bold;
+    font-family: "Arial Black";
+    font-size: large;
+}
+.search {
+    background-color: darkgray;
+    color: white;
+    float: left;
+}
+
+.search-icon {
+    color: white;
+    width: 1px;
+    height: 1px;
+}
