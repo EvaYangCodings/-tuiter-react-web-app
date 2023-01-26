@@ -3,11 +3,9 @@
 }
 .wd-search-post-part {
     width: 80%;
-    height: 95%;
-    padding-top: 20px;
-
-    border: 1px solid rgb(47, 51, 54);
-    /*border: red solid 5px;*/
+    height: 100%;
+    margin-top: 20px;
+    border: red solid 5px;
 }
 .wd-float-left {
     float: left;
@@ -27,25 +25,22 @@
 }
 .wd-search-setup-part {
     width: 100%;
-    height: 40px;
-    /*border: white solid 2px;*/
+    height: 30px;
+    border: white solid 2px;
     margin-top: 10px;
 }
 .wd-search-part {
     width: 80%;
-    height: 95%;
-    /*border: blue solid 2px;*/
+    height: 25px;
+    border: blue solid 2px;
     background-color: darkgray;
-    opacity: 0.3;
-    border-radius: 50px;
 }
 
 .wd-setup-part {
     width: 10%;
-    height: 80%;
-    margin-top: 0.5%;
+    height: 25px;
     margin-left: 5%;
-    /*border: pink solid 2px;*/
+    border: pink solid 2px;
 }
 
 .wd-search-float-left {
@@ -54,41 +49,27 @@
 
 .wd-search-icon {
     width: 10%;
-    height: 80%;
-    /*border: yellow solid 2px;*/
+    height: 20px;
+    border: yellow solid 2px;
 }
 .wd-input {
-    width: 70%;
-    height: 80%;
-    padding: 0.7%;
-    /*border: orange solid 2px;*/
+    width: 80%;
+    height: 20px;
+    margin-left: 5%;
+    border: orange solid 2px;
 }
-.wd-input-content {
-    width: 100%;
-    height: 90%;
-}
-input[type="text"] {
-    background-color: darkgray;
-    font-color: white;
-    border: darkgray 0px;
-}
-::placeholder {
-    color: white;
-    font-size: large;
-}
+
 .wd-search-icon-float-left {
     float: left;
 }
 
 .wd-search-icon > img{
-    padding: 10%;
     width: auto;
-    height: 80%;
+    height: 20px;
     margin-left: 20%;
 }
 
 .wd-setup-part > img {
     width: auto;
-    height: 30px;
-    margin-left: 80%;
+    height: 20px;
 }
