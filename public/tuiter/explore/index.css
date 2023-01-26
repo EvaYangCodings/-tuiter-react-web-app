@@ -1,24 +1,24 @@
-.wd-container {
-    background-color: black;
-    height: 100vh;
+.wd-navigator {
+    width: 15%;
 }
-
+.float-left {
+    float: left;
+}
 .wd-section {
     color: white;
     font-family: "Arial Black";
     font-size: x-large;
     height: 50px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 }
-.search {
-    background-color: darkgray;
-    color: white;
-    float: left;
+.wd-search-show {
+    width: 80%;
+    height: 100vh;
+    border: 2px solid red;
+}
+.wd-container {
+    background-color: black;
+    height: 100vh;
 }
 
-.search-icon {
-    color: white;
-    width: 1px;
-    height: 1px;
-}
