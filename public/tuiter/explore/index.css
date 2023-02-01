@@ -19,7 +19,8 @@
     font-size: x-large;
     height: 50px;
     margin: 10px;
-    padding: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .wd-container {
@@ -121,9 +122,9 @@ input[type="text"] {
 }
 
 .wd-posts-without-thumbnail {
-    height: 150px;
+    height: 140px;
     margin-top: 10px;
-    padding: 10px 16px 10px 30px;
+    padding: 7px 16px 7px 30px;
     border-top: 1px solid rgb(47, 51, 54);
     border-bottom: 1px solid rgb(47, 51, 54);
 }
@@ -148,7 +149,7 @@ input[type="text"] {
 }
 #post-1, #post-2 {
     width: 100%;
-    height: 80px;
+    height: 70px;
 }
 .wd-ellipsis-float-left {
     float: left;
