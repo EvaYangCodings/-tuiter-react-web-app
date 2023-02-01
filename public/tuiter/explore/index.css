@@ -94,3 +94,27 @@ input[type="text"] {
     width: auto;
     height: 30px;
 }
+.wd-topic-labels-part {
+    height: 40px;
+    border-bottom: 2px solid rgb(110, 118, 125);
+}
+
+.wd-label {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+    margin-left: 3%;
+    padding: 16px;
+    color: rgb(110, 118, 125);
+    float: left;
+}
+
+#label-1 {
+    color: rgb(29, 161, 242);
+}
+
+.wd-label-underline {
+    margin-top: 4px;
+    border-bottom: 3px solid rgb(29, 161, 242);
+    border-radius: 9999px;
+}
