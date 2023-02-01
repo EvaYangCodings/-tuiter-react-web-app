@@ -1,9 +1,9 @@
 .wd-navigator {
-    width: 10%;
+    width: 7%;
     margin-left: 16px;
 }
 .wd-search-post-part {
-    width: 80%;
+    width: 85%;
     height: 95%;
     padding-top: 20px;
 
@@ -96,7 +96,8 @@ input[type="text"] {
 }
 .wd-topic-labels-part {
     height: 40px;
-    border-bottom: 1px solid rgb(47, 51, 54);
+    border-bottom: 2px solid rgb(47, 51, 54);
+    display: flex;
 }
 
 .wd-label {
