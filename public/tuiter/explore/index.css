@@ -1,5 +1,5 @@
 .wd-navigator {
-    width: 15%;
+    width: 10%;
     margin-left: 16px;
 }
 .wd-search-post-part {
@@ -96,7 +96,7 @@ input[type="text"] {
 }
 .wd-topic-labels-part {
     height: 40px;
-    border-bottom: 1px solid rgb(110, 118, 125);
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 .wd-label {
@@ -117,4 +117,43 @@ input[type="text"] {
     margin-top: 3px;
     border-bottom: 3px solid rgb(29, 161, 242);
     border-radius: 9999px;
+}
+
+.wd-posts-without-thumbnail {
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px 16px 10px 30px;
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+.wd-post-content {
+    padding: 10px;
+    width: 80%;
+}
+.wd-post-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 5px 0 5px 0;
+}
+.wd-post-tuits {
+    font-size: 11px;
+    color: rgb(110, 118, 125);
+}
+#post-1, #post-2 {
+    width: 100%;
+    height: 80px;
+}
+.wd-ellipsis-float-left {
+    float: left;
+}
+.wd-ellipsis {
+    color: rgb(110, 118, 125);
+    font-weight: bold;
+    margin-left: 10%;
 }
