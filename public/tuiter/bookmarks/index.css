@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+
+.wd-bookmarks-list {
+    border: 1px solid lightgray;
+    display: flex;
+    padding-bottom: 12px;
+}
+.wd-bookmark-title-user {
+    width: 95%;
+}
+.wd-bookmark-title {
+    font-family: "Arial Black";
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.wd-bookmark-user {
+    font-size: 13px;
+    color: lightgray;
+    margin-left: 16px;
+}
+
+.wd-bookmark-float-left {
+    float: left;
+}
+
+.wd-bookmark-more {
+    color: cornflowerblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-right: 16px;
+}
