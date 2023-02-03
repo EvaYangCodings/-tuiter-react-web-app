@@ -1,6 +1,10 @@
 body {
     background-color: black;
 }
+.wd-outline {
+    height: 1500px;
+    width: 70%;
+}
 .wd-search-post-part {
     width: 100%;
     height: 95%;
