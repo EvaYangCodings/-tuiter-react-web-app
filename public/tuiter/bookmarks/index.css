@@ -3,7 +3,7 @@ body{
 }
 .wd-outline {
     height: 1500px;
-    width: 70%;
+    width: 50%;
     border: 1px solid rgb(110, 118, 125);
 }
 .wd-bookmarks-list {
@@ -41,9 +41,8 @@ body{
     margin-right: 16px;
 }
 .wd-bookmark-container {
-
     height: 400px;
-
+    padding-bottom: 50px;
 }
 
 .wd-avatar > img {
