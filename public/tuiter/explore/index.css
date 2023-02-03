@@ -116,11 +116,10 @@ input[type="text"] {
 
 
 .wd-posts-without-thumbnail {
-    height: 140px;
+    height: 70px;
     margin-top: 10px;
     padding: 2px 16px 10px 30px;
     border-top: 1px solid rgb(47, 51, 54);
-    border-bottom: 1px solid rgb(47, 51, 54);
 }
 .wd-post-content {
     padding: 10px;
@@ -158,6 +157,7 @@ input[type="text"] {
 
 .wd-post-author-thumbnail, .wd-post-topic-thumbnail {
     height: 120px;
+    border-top: 1px solid rgb(47, 51, 54);
     border-bottom: 1px solid rgb(47, 51, 54);
     padding-top: 10px;
 }
