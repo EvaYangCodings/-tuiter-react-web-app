@@ -41,8 +41,9 @@ body{
     margin-right: 16px;
 }
 .wd-bookmark-container {
-    height: 400px;
-    padding-bottom: 50px;
+    height: 550px;
+    margin-bottom: 50px;
+
 }
 
 .wd-avatar > img {
