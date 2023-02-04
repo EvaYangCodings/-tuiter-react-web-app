@@ -536,3 +536,45 @@ p#id-selector-2 {
     background-color: red;
     color: white;
 }
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: rgba(230, 197, 173, 0.92);
+    }
+    .media-query {
+        background-color: purple;
+        color: white;
+    }
+    .wd-media > img {
+        width: 200px;
+    }
+}
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: rgba(71, 249, 160, 0.42);
+        color: black;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+    .wd-media > img {
+        width: 400px;
+    }
+}
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: rgba(195, 0, 255, 0.31);
+        color: black;
+    }
+    .media-query {
+        background-color: green;
+        color: white;
+    }
+    .wd-media > img {
+        width: 600px;
+    }
+}
