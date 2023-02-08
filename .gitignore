@@ -8,7 +8,9 @@
 
 # public vendors
 ./public/vendors/*
-
+./public/vendors/bootstrap/
+./public/vendors/fontawesome/
+*.svg
 
 # testing
 /coverage
