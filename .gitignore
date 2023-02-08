@@ -7,10 +7,7 @@
 .pnp.js
 
 # public vendors
-./public/vendors/*
-./public/vendors/bootstrap/
-./public/vendors/fontawesome/
-*.svg
+./public/vendors/**
 
 # testing
 /coverage
