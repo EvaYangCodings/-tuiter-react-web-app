@@ -8,6 +8,8 @@
 
 # public vendors
 ./public/vendors/
+./public/vendors/*
+./public/vendors/**
 
 # testing
 /coverage
