@@ -11,6 +11,10 @@
     background-color: lightgrey;
     opacity: 0.3;
 }
+.wd-post-list {
+    border: 1px solid lightgrey;
+    margin-top: 2px;
+}
 
 .nav-tabs {
     border: none;
