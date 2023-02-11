@@ -1,0 +1,30 @@
+.list-group-item {
+    border: none;
+    color: rgba(37, 37, 37, 0.97);
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: black;
+}
+.wd-user-input {
+    background-color: lightgrey;
+    opacity: 0.3;
+}
+
+.nav-tabs {
+    border: none;
+}
+.nav-link {
+    color: grey;
+}
+.wd-active {
+    /*font-weight: bold;*/
+    font-family: Arial;
+    color: black;
+    border-bottom: 3px solid dodgerblue;
+}
+
+.wd-left-sidebar .list-group-item{
+    height: 3.5em;
+}

@@ -10,52 +10,52 @@
           rel="stylesheet"/>
 </head>
 <body class="pb-1">
-<div class="container mt-1">
+<div class="container-fluid mt-1">
     <div class="row">
         <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
-            <div class="list-group">
+            <div class="list-group wd-left-sidebar">
                 <a href="#" class="list-group-item">
-                    <i class="fab fa-twitter fa-flip-horizontal"></i>
+                    <i class="fab fa-twitter" style="color:dodgerblue"></i>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Home</span>
                     </div>
                 </a>
-                <a href="index.html" class="list-group-item active">
+                <a href="index.html" class="list-group-item active fw-bold">
                     <div>
-                        <i class="fa fa-hashtag me-1" aria-hidden="true"></i>
+                        <i class="fa fa-hashtag me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Explore</span>
                     </div>
                 </a>
                 <a href="#"class="list-group-item">
                     <div>
-                        <i class="fa fa-bell me-1" aria-hidden="true"></i>
+                        <i class="far fa-bell me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Notifications</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-envelope me-1" aria-hidden="true"></i>
+                        <i class="far fa-envelope me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Messages</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-bookmark me-1" aria-hidden="true"></i>
+                        <i class="far fa-bookmark me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Bookmarks</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-list me-1" aria-hidden="true"></i>
-                        <span class="d-none d-xl-inline-block">Lists</span>
+                        <i class="fa fa-fire-alt me-3" aria-hidden="true"></i>
+                        <span class="d-none d-xl-inline-block">Top Articles</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-user me-1" aria-hidden="true"></i>
+                        <i class="far fa-user me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Profile</span>
                     </div>
                 </a>
@@ -63,9 +63,9 @@
                     <div class="row">
                         <div class="col-2">
                             <span class="d-flex">
-                                <span class="fa-stack" aria-hidden="true" style="padding-right:1px">
-                                  <i class="fas fa-circle fa-stack-1x ms-2 ps-1"></i>
-                                  <i class="fas fa-ellipsis-h fa-inverse fa-stack-1x ms-2 ps-2" style="font-size: 8px"></i>
+                                <span class="fa-stack me-3" aria-hidden="true" style="padding-right:1px">
+                                  <i class="far fa-circle fa-stack-1x ms-2 ps-1"></i>
+                                  <i class="fa fa-ellipsis-h fa-stack-1x ms-2 ps-2" style="font-size: 8px"></i>
                                 </span>
                                 <span class="col-2 ms-4 ps-2 align-self-center d-none d-xl-inline-block">More</span>
                             </span>
@@ -74,21 +74,21 @@
                     </div>
                 </a>
             </div>
-            <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
+            <button class="btn btn-primary w-100 mt-1 rounded-pill fw-bold text-white" style="background-color: dodgerblue; border-color: dodgerblue;">Tuit</button>
         </div>
         <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11">
         <div class="row mb-1">
             <div class="col-11 position-relative">
                 <span class="fa fa-search ms-4 position-absolute top-50 start-0 translate-middle-y"></span>
-                <input class="form-control rounded-pill ps-5" placeholder="Search Tuiter"/>
+                <input class="form-control rounded-pill ps-5 wd-user-input"placeholder="Search Tuiter"/>
             </div>
             <div class="col-1 align-self-center">
-                <i class="fas fa-cog text-primary" style="font-size: 1.5em"></i>
+                <i class="fas fa-cog text-primary" style="font-size: 1.5em;color: inherit;"></i>
             </div>
         </div>
             <ul class="nav nav-tabs mb-1">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">For you</a>
+                <li class="nav-item wd-active">
+                    <a class="nav-link" href="#">For you</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Trending</a>
@@ -104,9 +104,16 @@
                 </li>
             </ul>
             <div class="position-relative">
-                <img src="../images/Starship.png" width="100%">
-                <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
+                <img src="../images/Australian-open-2.jpeg" width="100%">
+                <h1 class="position-absolute bottom-0 ms-3 text-white">Australian Open 2023</h1>
+                <h6 class="position-absolute ms-3 text-white" style="bottom: 50px;">Tennis Tournament . LIVE</h6>
             </div>
+
+            <!--            <div class="position-relative">-->
+<!--                <img src="../images/Australian-open-2.jpeg" width="100%">-->
+<!--                <h6 class="position-absolute bottom-0 text-white">Tennis Tournament . LIVE</h6>-->
+<!--                <h1 class="position-absolute bottom-0 text-white">Australian Open 2023</h1>-->
+<!--            </div>-->
             <ul class="list-group">
                 <li class="list-group-item">
                     <div class="row">
