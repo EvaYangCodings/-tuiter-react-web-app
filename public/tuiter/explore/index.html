@@ -35,20 +35,29 @@
                     <span class="fa fa-list space"></span>Lists</a>
                 <a href="#" class="list-group-item">
                     <span class="fa fa-user space"></span>Profile</a>
-                <a href="#" class="list-group-item">
-                    <img class="wd-nav-icon" src="../images/ellipsis-circle-icon.png">
-                    More
+                <a href="#" class="list-group-item ps-1">
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="fa-stack" style="padding-right:1px">
+                                <i class="fas fa-circle fa-stack-1x"></i>
+                                <i class="fas fa-ellipsis-h fa-inverse fa-stack-1x" style="font-size: 8px"></i>
+                            </span>
+                        </div>
+                        <div class="col-2 align-self-center">More</div>
+                    </div>
+
+<!--                    <img class="wd-nav-icon" src="../images/ellipsis-circle-icon.png">-->
                 </a>
             </div>
             <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
         </div>
         <div class="col-6">
         <div class="row mb-1">
-            <div class="col-11">
-                <input class="form-control rounded-pill" placeholder="Search Tuiter"/>
+            <div class="col-11 position-relative">
+                <span class="fa fa-search ms-4 position-absolute top-50 start-0 translate-middle-y"></span>
+                <input class="form-control rounded-pill ps-5" placeholder="Search Tuiter"/>
             </div>
-            <div class="col-1 pt-1">
-<!--                <img src="../images/gear.png" style="width: 25px">-->
+            <div class="col-1 align-self-center">
                 <i class="fas fa-cog text-primary" style="font-size: 1.5em"></i>
             </div>
         </div>
@@ -155,7 +164,7 @@
         </div>
         <div class="col-4 d-none d-lg-block">
             <div class="list-group">
-                <div class="list-group-item">Who to follow</div>
+                <div class="list-group-item fw-bolder">Who to follow</div>
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-1 ps-0  align-self-center">
