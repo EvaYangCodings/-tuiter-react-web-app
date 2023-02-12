@@ -27,7 +27,13 @@
     /*font-weight: bold;*/
     font-family: Arial;
     color: black;
-    border-bottom: 3px solid dodgerblue;
+}
+.wd-active-bar {
+    height: 4px;
+    width: 60px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    margin-left: 15px;
 }
 
 .wd-left-sidebar .list-group-item{
