@@ -11,9 +11,10 @@
     background-color: rgba(172, 172, 172, 0.08);
     border: 0px;
 }
-.wd-post-list {
-    border: 1px solid lightgrey;
+.wd-border {
+    border: 1px solid rgba(211, 211, 211, 0.43);
     margin-top: 2px;
+    padding: 0px;
 }
 
 .nav-tabs {
