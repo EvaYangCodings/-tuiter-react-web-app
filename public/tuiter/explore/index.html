@@ -12,50 +12,50 @@
 <body class="pb-1">
 <div class="container mt-1">
     <div class="row">
-        <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
-            <div class="list-group">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1">
+            <div class="list-group wd-left-sidebar">
                 <a href="#" class="list-group-item">
-                    <i class="fab fa-twitter fa-flip-horizontal"></i>
+                    <i class="fab fa-twitter" style="color:dodgerblue"></i>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Home</span>
                     </div>
                 </a>
-                <a href="index.html" class="list-group-item active">
+                <a href="index.html" class="list-group-item active fw-bold">
                     <div>
-                        <i class="fa fa-hashtag me-1" aria-hidden="true"></i>
+                        <i class="fa fa-hashtag me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Explore</span>
                     </div>
                 </a>
                 <a href="#"class="list-group-item">
                     <div>
-                        <i class="fa fa-bell me-1" aria-hidden="true"></i>
+                        <i class="far fa-bell me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Notifications</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-envelope me-1" aria-hidden="true"></i>
+                        <i class="far fa-envelope me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Messages</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-bookmark me-1" aria-hidden="true"></i>
+                        <i class="far fa-bookmark me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Bookmarks</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-list me-1" aria-hidden="true"></i>
-                        <span class="d-none d-xl-inline-block">Lists</span>
+                        <i class="fa fa-fire-alt me-3" aria-hidden="true"></i>
+                        <span class="d-none d-xl-inline-block">Top Articles</span>
                     </div>
                 </a>
                 <a href="#" class="list-group-item">
                     <div>
-                        <i class="fa fa-user me-1" aria-hidden="true"></i>
+                        <i class="far fa-user me-3" aria-hidden="true"></i>
                         <span class="d-none d-xl-inline-block">Profile</span>
                     </div>
                 </a>
@@ -63,9 +63,9 @@
                     <div class="row">
                         <div class="col-2">
                             <span class="d-flex">
-                                <span class="fa-stack" aria-hidden="true" style="padding-right:1px">
-                                  <i class="fas fa-circle fa-stack-1x ms-2 ps-1"></i>
-                                  <i class="fas fa-ellipsis-h fa-inverse fa-stack-1x ms-2 ps-2" style="font-size: 8px"></i>
+                                <span class="fa-stack me-3" aria-hidden="true" style="padding-right:1px">
+                                  <i class="far fa-circle fa-stack-1x ms-2 ps-1"></i>
+                                  <i class="fa fa-ellipsis-h fa-stack-1x ms-2 ps-2" style="font-size: 8px"></i>
                                 </span>
                                 <span class="col-2 ms-4 ps-2 align-self-center d-none d-xl-inline-block">More</span>
                             </span>
@@ -74,21 +74,25 @@
                     </div>
                 </a>
             </div>
-            <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
+
+                <button class="btn btn-primary w-100 mt-1 rounded-pill fw-bold text-white" style="background-color: dodgerblue; border-color: dodgerblue;">Tweet</button>
+
         </div>
         <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11">
         <div class="row mb-1">
             <div class="col-11 position-relative">
                 <span class="fa fa-search ms-4 position-absolute top-50 start-0 translate-middle-y"></span>
-                <input class="form-control rounded-pill ps-5" placeholder="Search Tuiter"/>
+                <input class="form-control rounded-pill ps-5 wd-user-input"placeholder="Search Tuiter"/>
             </div>
             <div class="col-1 align-self-center">
-                <i class="fas fa-cog text-primary" style="font-size: 1.5em"></i>
+                <a class="btn btn-default btn-md" href="#">
+                    <i class="fa fa-cog"></i>
+                </a>
             </div>
         </div>
             <ul class="nav nav-tabs mb-1">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">For you</a>
+                <li class="nav-item wd-active">
+                    <a class="nav-link" href="#">For you</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Trending</a>
@@ -104,85 +108,90 @@
                 </li>
             </ul>
             <div class="position-relative">
-                <img src="../images/Starship.png" width="100%">
-                <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
+                <img src="../images/Australian-open-2.jpeg" width="100%">
+                <h1 class="position-absolute bottom-0 ms-3 text-white">Australian Open 2023</h1>
+                <h6 class="position-absolute ms-3 text-white" style="bottom: 50px;">Tennis Tournament . LIVE</h6>
             </div>
-            <ul class="list-group">
+
+            <ul class="list-group wd-post-list">
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-10">
-                            <div class="text-secondary">Web Development</div>
-                            <div class="row">
-                                <div>
-                                    <span>
-                                        <span class="fw-bolder">ReactJS</span>
-                                        <i class="fas fa-check-circle"><span class="text-secondary"> -2h</span></i>
-                                    </span>
-                                </div>
-                            </div>
+                        <div class="col-11">
+                            <div class="text-secondary">Politics.Trending</div>
                             <div class="fw-bolder">
-                                React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
-                            </div>
-                        </div>
-                        <div class="col-2 pt-3 pe-0">
-                            <img class="float-end" src="../images/react_logo.png" height="80px">
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-10">
-                            <div class="row">
-                                <div>
-                                    <span>
-                                        <span class="fw-bolder">JavaScript</span>
-                                        <i class="fas fa-check-circle"><span class="text-secondary"> -2h</span></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="fw-bolder">
-                                JavaScript.com is a resource for the JavaScript community. You will find resources and examples for JavaScript beginners as well as support for JavaScript                       </div>
-                            <div class="text-secondary">123k tuits</div>
-                        </div>
-                        <div class="col-2 pt-3 pe-0">
-                            <img class="float-end rounded-3" src="../images/JavaScript-logo.png" height="80px">
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-10">
-                            <div class="text-secondary">Web Development</div>
-                            <div class="row">
-                                <div class="col-2 fw-bolder float-start">JQuery</div>
+                                Seizures
                             </div>
                             <div class="text-secondary">
-                                123k tuits
+                                4,953 Tweets
                             </div>
                         </div>
-                        <div class="col-2 pt-1 pe-0">
-                            <img class="float-end" src="../images/JQuery.png" height="60px">
+                        <div class="col-1 pt-0 me-0">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-h" style="color: gray"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="fw-bolder">#InfinityPool</div>
+                    <div class="text-secondary">See the electrifying thriller Infinity Pool in
+                    theaters - if you dare</div>
+                    <div>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="text-secondary">Promoted by NEON</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="text-secondary">Sports.Trending</div>
+                            <div class="fw-bolder">
+                                RIP Bean
+                            </div>
+                            <div class="text-secondary">
+                                18k Tweets
+                            </div>
+                        </div>
+                        <div class="col-1 pt-0 me-0">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-h" style="color: gray"></i>
+                            </a>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="row">
-                        <div class="col-10">
-                            <div class="text-secondary">Web Development</div>
-                            <div class="row">
-                                <div>
-                                    <span>
-                                        <span class="fw-bolder">NodeJS</span>
-                                        <i class="fas fa-check-circle"><span class="text-secondary"> -2h</span></i>
-                                    </span>
-                                </div>
+                        <div class="col-11">
+                            <div class="text-secondary">Politics.Trending</div>
+                            <div class="fw-bolder">
+                                Durham
                             </div>
                             <div class="text-secondary">
-                                123k tuits
+                                Trending with <span style="color: dodgerblue">Barr, Barr</span>
                             </div>
                         </div>
-                        <div class="col-2 pt-1 pe-0">
-                            <img class="float-end" src="../images/NodeJS.jpeg" height="80px">
+                        <div class="col-1 pt-0 me-0">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-h" style="color: gray"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="text-secondary">Trending in Business and finance</div>
+                            <div class="fw-bolder">
+                                #DirectedEvolution
+                            </div>
+                            <div class="text-secondary">
+                                172k Tweets
+                            </div>
+                        </div>
+                        <div class="col-1 pt-0 me-0">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-h" style="color: gray"></i>
+                            </a>
                         </div>
                     </div>
                 </li>
@@ -191,89 +200,66 @@
 
         </div>
         <div class="col-4 d-none d-lg-block">
-            <div class="list-group">
+            <div class="list-group wd-follow">
                 <div class="list-group-item fw-bolder">Who to follow</div>
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-1 ps-0  align-self-center">
-                            <img src="../images/Java.jpeg" class="rounded-circle" style="height: 50px">
+                            <img src="../images/northeastern_university_logo.jpeg" class="rounded-circle" style="height: 50px">
                         </div>
                         <div class="col-xl-8 col-lg-6 align-self-center">
-                            <div class="fw-bolder ps-4 pe-1">Java
-                                <i class="fas fa-check-circle"></i>
+                            <div class="fw-bolder ps-4 pe-1">Northeastern U.
+                                <i class="fa fa-check-circle" style="color: dodgerblue"></i>
                             </div>
-                            <div class="text-secondary ps-4">@Java</div>
+                            <div class="text-secondary ps-4">@Northeastern</div>
                         </div>
                         <div class="col-2 align-self-center">
-                            <button class="btn btn-primary rounded-pill">Follow</button>
+                            <button class="btn btn-dark rounded-pill fw-bolder">Follow</button>
                         </div>
                     </div>
                 </div>
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-1 ps-0  align-self-center">
-                            <img src="../images/relativity.jpeg" class="rounded-circle" style="height: 50px">
+                            <img src="../images/matt.jpeg" class="rounded-circle" style="height: 50px">
                         </div>
-                        <div class="col-xl-8 col-lg-6  align-self-center">
-                            <div class="fw-bolder ps-4 pe-1">Relativity Space
-                                <i class="fas fa-check-circle"></i>
+                        <div class="col-xl-8 col-lg-6 align-self-center">
+                            <div class="fw-bolder ps-4 pe-1">Matt Wallace
+                                <i class="fa fa-check-circle" style="color: dodgerblue"></i>
                             </div>
-                            <div class="text-secondary ps-4">@relativityspace</div>
+                            <div class="text-secondary ps-4">@MattWallace888</div>
                         </div>
                         <div class="col-2 align-self-center">
-                            <button class="btn btn-primary rounded-pill">Follow</button>
+                            <button class="btn btn-dark rounded-pill fw-bolder">Follow</button>
                         </div>
                     </div>
                 </div>
                 <div class="list-group-item">
                     <div class="row">
                         <div class="col-1 ps-0  align-self-center">
-                            <img src="../images/vigin.svg" class="rounded-circle" style="height: 50px">
+                            <img src="../images/pointsbet.jpeg" class="rounded" style="height: 50px">
                         </div>
-                        <div class="col-xl-8 col-lg-6  align-self-center">
-                            <div class="fw-bolder ps-4 pe-1">Vigin Galactic
-                                <i class="fas fa-check-circle"></i>
+                        <div class="col-xl-8 col-lg-6 align-self-center">
+                            <div class="fw-bolder ps-4 pe-1">PointsBet Sportsb...
+                                <i class="fa fa-check-circle" style="color: goldenrod"></i>
                             </div>
-                            <div class="text-secondary ps-4">@vigingalactic</div>
+                            <div class="text-secondary ps-4">@PointsBetUSA</div>
+                            <div class="text-secondary ms-4 mt-2">
+                                <span><i class="fas fa-arrow-right"></i>Promoted</span>
+                            </div>
                         </div>
                         <div class="col-2 align-self-center">
-                            <button class="btn btn-primary rounded-pill">Follow</button>
+                            <button class="btn btn-dark rounded-pill fw-bolder">Follow</button>
                         </div>
                     </div>
                 </div>
                 <div class="list-group-item">
-                    <div class="row">
-                        <div class="col-1 ps-0  align-self-center">
-                            <img src="../images/nasa.jpeg" class="rounded-circle" style="height: 50px">
-                        </div>
-                        <div class="col-xl-8 col-lg-6  align-self-center">
-                            <div class="fw-bolder ps-4 pe-1">NASA
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="text-secondary ps-4">@nasa</div>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <button class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
+                    <button href="#" class="btn" style="color: dodgerblue">Show more</button>
                 </div>
-                <div class="list-group-item">
-                    <div class="row">
-                        <div class="col-1 ps-0  align-self-center">
-                            <img src="../images/TESLA.PNG" class="rounded-circle" style="height: 50px">
-                        </div>
-                        <div class="col-xl-8 col-lg-6  align-self-center">
-                            <div class="fw-bolder ps-4 pe-1">TESLA
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="text-secondary ps-4">@tesla</div>
-                        </div>
-                        <div class="col-2 align-self-center me-1">
-                            <button class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
+            <div class="text-secondary mt-3 ms-2">Terms of Service Privacy Policy Cookie Policy Accessibility Ads info More... © 2023 Twitter, Inc.</div>
         </div>
     </div>
 </div>

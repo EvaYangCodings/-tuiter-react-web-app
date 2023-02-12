@@ -1,0 +1,40 @@
+.list-group-item {
+    border: none;
+    color: rgba(37, 37, 37, 0.97);
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: black;
+}
+.wd-user-input {
+    background-color: rgba(172, 172, 172, 0.08);
+    border: 0px;
+}
+.wd-post-list {
+    border: 1px solid lightgrey;
+    margin-top: 2px;
+}
+
+.nav-tabs {
+    border: none;
+}
+.nav-link {
+    color: grey;
+}
+.wd-active {
+    /*font-weight: bold;*/
+    font-family: Arial;
+    color: black;
+    border-bottom: 3px solid dodgerblue;
+}
+
+.wd-left-sidebar .list-group-item{
+    height: 3.5em;
+}
+.wd-follow .list-group-item{
+    background-color: rgba(172, 172, 172, 0.08);
+}
+.wd-follow {
+    border-radius: 15px;
+}
