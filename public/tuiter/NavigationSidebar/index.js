@@ -61,8 +61,7 @@ const NavigationSidebar = () => {
             </div>
         </a>
     </div>
-    <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
-    </div>    
+    <button class="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>  
     `);
 }
 
