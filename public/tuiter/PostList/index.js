@@ -6,7 +6,7 @@ function PostList (){
     return (`
         ${
         posts.map(post => (`
-            <div class="row mb-4">
+            <div class="row mb-2 wd-single-post">
                 ${PostItem(post)}
             </div>
             `)).join('')

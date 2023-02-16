@@ -1,7 +1,7 @@
 const PostItem =(post) => {
     return (`      
             <div class="col-1 wd-logo">
-                <img src="${post.logo}">
+                <img class="rounded-circle" src="${post.logo}">
             </div>
                     
             <div class="col-11 ps-4">
@@ -15,10 +15,8 @@ const PostItem =(post) => {
                         </span>
                     </div>
                     <div class="col-1">
-                        <i class="fas fa-ellipsis-h float-end"></i>
+                        <i class="fa fa-ellipsis-h float-end"></i>
                     </div>
-                    
-   
                 </div>               
                 <div class="row">${post.text}</div>
                 <div class="row mt-2">
