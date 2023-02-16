@@ -1,0 +1,28 @@
+export default [
+    {
+        logo: '../images/northeastern.png',
+        userName: 'Northeastern University',
+        handle: '@northeastern university',
+        time: '2h',
+        text: 'It is a great day to be a Husky.',
+        image: '../../images/husky.jpeg',
+        article: 'BOSTON — In the first iteration of the Beanpot final to ever feature Northeastern and Harvard, the TD Garden crowd also saw the tournament\'s first 3-on-3 + shootout championship game.',
+        reply: '3.5k',
+        retweet: '3k',
+        like: '5k',
+        share: '6.5k',
+    },
+    {
+        logo: '../images/northeastern.png',
+        userName: 'Northeastern University',
+        handle: '@northeastern university',
+        time: '2h',
+        text: 'It is a great day to be a Husky.',
+        image: '../../images/husky.jpeg',
+        article: 'BOSTON — In the first iteration of the Beanpot final to ever feature Northeastern and Harvard, the TD Garden crowd also saw the tournament\'s first 3-on-3 + shootout championship game.',
+        reply: '3.5k',
+        retweet: '3k',
+        like: '5k',
+        share: '6.5k',
+    },
+];
