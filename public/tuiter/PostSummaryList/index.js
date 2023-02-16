@@ -4,7 +4,7 @@ import posts from "./posts.js";
 
 function PostSummaryList (){
     return (`
-        <ul className="list-group">
+        <ul className="list-group" style="padding-left: 0px">
         ${
             posts.map(post => (`
             
