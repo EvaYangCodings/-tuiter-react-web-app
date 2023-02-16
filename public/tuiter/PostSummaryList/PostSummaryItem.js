@@ -17,7 +17,7 @@ const PostSummaryItem =(post) => {
                         </div>
                         <div class="text-secondary">${post.tweets}</div>
                     </div>
-                    <div class="col-2 pt-3 pe-0">
+                    <div class="col-2 pe-0 align-self-center">
                         <img class="float-end" src="${post.image}" height="80px">
                     </div>
                 </div>
