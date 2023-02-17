@@ -1,52 +1,52 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return (`
     <div class="list-group">
         <a href="#" class="list-group-item">
             <i class="fab fa-twitter"></i>
         </a>
-        <a href="../home/index.html" class="list-group-item">
+        <a href="../home/index.html" class="list-group-item ${active === 'home' ? 'active' : ''}">
             <div>
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Home</span>
             </div>
         </a>
-        <a href="../explore/index.html" class="list-group-item active">
+        <a href="../explore/index.html" class="list-group-item ${active === 'explore' ? 'active' : ''}">
             <div>
                 <i class="fa fa-hashtag me-1" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Explore</span>
             </div>
         </a>
-        <a href="#" class="list-group-item">
+        <a href="#" class="list-group-item ${active === 'notifications' ? 'active' : ''}">
             <div>
                 <i class="fa fa-bell me-1" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Notifications</span>
             </div>
         </a>
-        <a href="#" class="list-group-item">
+        <a href="#" class="list-group-item ${active === 'messages' ? 'active' : ''}">
             <div>
                 <i class="fa fa-envelope me-1" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Messages</span>
             </div>
         </a>
-        <a href="#" class="list-group-item">
+        <a href="#" class="list-group-item ${active === 'bookmarks' ? 'active' : ''}">
             <div>
                 <i class="fa fa-bookmark me-1" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Bookmarks</span>
             </div>
         </a>
-        <a href="#" class="list-group-item">
+        <a href="#" class="list-group-item ${active === 'lists' ? 'active' : ''}">
             <div>
                 <i class="fa fa-list me-1" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Lists</span>
             </div>
         </a>
-        <a href="#" class="list-group-item">
+        <a href="#" class="list-group-item ${active === 'profile' ? 'active' : ''}">
             <div>
                 <i class="fa fa-user me-1" aria-hidden="true"></i>
                 <span class="d-none d-xl-inline-block">Profile</span>
             </div>
         </a>
-        <a href="#" class="list-group-item ps-1">
+        <a href="#" class="list-group-item ps-1 ${active === 'more' ? 'active' : ''}">
             <div class="row">
                 <div class="col-2">
                     <span class="d-flex">
