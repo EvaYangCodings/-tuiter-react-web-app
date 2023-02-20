@@ -25,14 +25,14 @@ function App() {
     // </div>
       <BrowserRouter>
           <div>
-              <h1 className="container">
+              <div className="container">
                   <Routes>
                      {/*<Route path="/labs" element={<Labs/>}/>*/}
                      <Route index element={<Labs/>}/>
                      <Route path="/hello" element={<HelloWorld/>}/>
                      <Route path="/tuiter" element={<Tuiter/>}/>
                   </Routes>
-              </h1>
+              </div>
 
           </div>
       </BrowserRouter>

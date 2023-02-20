@@ -2,7 +2,7 @@ import React from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {Link} from "react-router-dom";
+import {a} from "react-router-dom";
 import { faHome, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 
 const NavigationSidebar = (
@@ -13,69 +13,69 @@ const NavigationSidebar = (
     library.add(fab)
     return (
         <div className="list-group">
-            <Link to="#" className="list-group-item">
-                <FontAwesomeIcon icon={['fab', 'twitter']} color="#0d6efd"/>
-            </Link>
+                <a to="#" className="list-group-item">
+                    <FontAwesomeIcon icon={['fab', 'twitter']} color="#0d6efd"/>
+                </a>
 
-            <Link to="#" className={`list-group-item
+                <a to="#" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faHome}/>
-                    <span className="nav-link-text ms-2">Home</span>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item
+                    <div>
+                        <FontAwesomeIcon icon={faHome}/>
+                        <span className="nav-a-text ms-2">Home</span>
+                    </div>
+                </a>
+                <a to="#" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faHashtag}/>
-                    <span className="nav-link-text ms-3">Explore</span>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item
+                    <div>
+                        <FontAwesomeIcon icon={faHashtag}/>
+                        <span className="nav-a-text ms-3">Explore</span>
+                    </div>
+                </a>
+                <a to="#" className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faBell}/>
-                    <span className="nav-link-text ms-3">Notifications</span>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item
+                    <div>
+                        <FontAwesomeIcon icon={faBell}/>
+                        <span className="nav-a-text ms-3">Notifications</span>
+                    </div>
+                </a>
+                <a to="#" className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faEnvelope}/>
-                    <span className="nav-link-text ms-3">Messages</span>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item
+                    <div>
+                        <FontAwesomeIcon icon={faEnvelope}/>
+                        <span className="nav-a-text ms-3">Messages</span>
+                    </div>
+                </a>
+                <a to="#" className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faBookmark}/>
-                    <span className="nav-link-text ms-4">Bookmarks</span>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item
+                    <div>
+                        <FontAwesomeIcon icon={faBookmark}/>
+                        <span className="nav-a-text ms-3">Bookmarks</span>
+                    </div>
+                </a>
+                <a to="#" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faList}/>
-                    <span className="nav-link-text ms-3">Lists</span>
-                </div>
-            </Link>
+                    <div>
+                        <FontAwesomeIcon icon={faList}/>
+                        <span className="nav-a-text ms-3">Lists</span>
+                    </div>
+                </a>
 
-            <Link to="#" className={`list-group-item
+                <a to="#" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faUser}/>
-                    <span className="nav-link-text ms-3">Profile</span>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item
+                    <div>
+                        <FontAwesomeIcon icon={faUser}/>
+                        <span className="nav-a-text ms-3">Profile</span>
+                    </div>
+                </a>
+                <a to="#" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-                <div>
-                    <FontAwesomeIcon icon={faEllipsisH}/>
-                    <span className="nav-link-text ms-3">More</span>
-                </div>
-            </Link>
+                    <div>
+                        <FontAwesomeIcon icon={faEllipsisH}/>
+                        <span className="nav-a-text ms-3">More</span>
+                    </div>
+                </a>
 
-        </div>
+            </div>
     );
 };
 
