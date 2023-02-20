@@ -12,14 +12,14 @@ const PostSummaryItem = (
 ) => {
     return(
         <li className="list-group-item">
-            <div className="row">
+            <div className="row pe-0">
                 <div className="col-10">
-                    <div>{post.userName} . {post.time}</div>
-                    <div className="fw-bolder">{post.topic}</div>
-                    <div>{post.title}</div>
+                    <div className="text-secondary pb-1">{post.userName} . {post.time}</div>
+                    <div className="fw-bolder pb-1">{post.topic}</div>
+                    <div className="text-secondary pb-1">{post.title}</div>
                 </div>
-                <div className="col-2">
-                    <img width={70} className="float-end rounded-3" src={`../../images/${post.image}`}/>
+                <div className="col-2 d-flex align-items-center">
+                    <img width={70} className="rounded-3 float-end" src={`../../images/${post.image}`}/>
                 </div>
             </div>
         </li>
