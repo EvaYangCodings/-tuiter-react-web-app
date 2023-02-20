@@ -3,6 +3,8 @@ import './App.css';
 import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
+import {BrowserRouter} from "react-router-dom";
+import {Route, Routes} from "react-router";
 function App() {
   return (
     // <div className="App">
@@ -21,15 +23,19 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-      <div>
-        <h1 className="container">
-            <HelloWorld/>
-            <Labs/>
-            <Tuiter/>
-        </h1>
+      <BrowserRouter>
+          <div>
+              <h1 className="container">
+                  <Routes>
+                     {/*<Route path="/labs" element={<Labs/>}/>*/}
+                     <Route index element={<Labs/>}/>
+                     <Route path="/hello" element={<HelloWorld/>}/>
+                     <Route path="/tuiter" element={<Tuiter/>}/>
+                  </Routes>
+              </h1>
 
-      </div>
-
+          </div>
+      </BrowserRouter>
   );
 }
 
