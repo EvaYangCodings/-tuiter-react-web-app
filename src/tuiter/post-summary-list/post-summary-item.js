@@ -18,7 +18,7 @@ const PostSummaryItem = (
                     <div className="fw-bolder pb-1">{post.topic}</div>
                     <div className="text-secondary pb-1">{post.title}</div>
                 </div>
-                <div className="col-2 d-flex align-items-center">
+                <div className="col-2 pe-0 align-self-center">
                     <img width={70} className="rounded-3 float-end" src={`../../images/${post.image}`}/>
                 </div>
             </div>

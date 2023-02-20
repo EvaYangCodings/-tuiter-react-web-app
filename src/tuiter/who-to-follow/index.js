@@ -5,7 +5,7 @@ import WhoToFollowListItem from "./who-to-follow-list-item";
 
 function WhoToFollowList (){
     return (
-        <ul className="list-group mt-3">
+        <ul className="list-group mt-1">
             <li className = "list-group-item">
                 <h3>Who to follow</h3>
             </li>

@@ -13,7 +13,7 @@ const NavigationSidebar = (
     library.add(fab)
     return (
         <div className="list-group">
-                <a to="#" className="list-group-item">
+                <a to="#" className="list-group-item d-none d-xl-inline-block" aria-hidden="true">
                     <FontAwesomeIcon icon={['fab', 'twitter']} color="#0d6efd"/>
                 </a>
 
@@ -21,42 +21,42 @@ const NavigationSidebar = (
                     ${active === 'home'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faHome}/>
-                        <span className="nav-a-text ms-2">Home</span>
+                        <span className="nav-a-text ms-2 d-none d-xl-inline-block">Home</span>
                     </div>
                 </a>
                 <a to="#" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faHashtag}/>
-                        <span className="nav-a-text ms-3">Explore</span>
+                        <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Explore</span>
                     </div>
                 </a>
                 <a to="#" className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faBell}/>
-                        <span className="nav-a-text ms-3">Notifications</span>
+                        <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Notifications</span>
                     </div>
                 </a>
                 <a to="#" className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faEnvelope}/>
-                        <span className="nav-a-text ms-3">Messages</span>
+                        <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Messages</span>
                     </div>
                 </a>
                 <a to="#" className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faBookmark}/>
-                        <span className="nav-a-text ms-3">Bookmarks</span>
+                        <span className="nav-a-text ms-3 d-none d-xl-inline-block">Bookmarks</span>
                     </div>
                 </a>
                 <a to="#" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faList}/>
-                        <span className="nav-a-text ms-3">Lists</span>
+                        <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Lists</span>
                     </div>
                 </a>
 
@@ -64,14 +64,14 @@ const NavigationSidebar = (
                     ${active === 'profile'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faUser}/>
-                        <span className="nav-a-text ms-3">Profile</span>
+                        <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Profile</span>
                     </div>
                 </a>
                 <a to="#" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faEllipsisH}/>
-                        <span className="nav-a-text ms-3">More</span>
+                        <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">More</span>
                     </div>
                 </a>
 

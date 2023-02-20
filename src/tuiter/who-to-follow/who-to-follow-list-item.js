@@ -7,15 +7,15 @@ const WhoToFollowListItem = (
     return(
         <li className="list-group-item">
             <div className="row mb-2">
-                <div className="col-2 d-flex align-items-center">
+                <div className="col-2 pe-0 align-self-center">
                     <img className="rounded-circle" height={48} src={`../../images/${who.avatarIcon}`}/>
                 </div>
-                <div className="col-7 align-items-center">
+                <div className="col-8 pe-0 align-self-center">
                     <div className="fw-bold">{who.userName}</div>
                     <div className="text-secondary">@{who.handle}</div>
                 </div>
-                <div className="col-2 d-flex align-items-center">
-                    <button className="btn btn-primary rounded-pill">Follow</button>
+                <div className="col-2 pe-0 align-self-center">
+                    <button className="btn btn-primary rounded-pill float-end">Follow</button>
                 </div>
             </div>
         </li>

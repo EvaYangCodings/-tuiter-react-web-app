@@ -1,15 +1,15 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
+import {faEllipsisH, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const ExploreComponent = () => {
     return(
         <>
             <div className="row">
                 <div className="col-11 position-relative">
-                    <input placeholder="Search Tuiter"
-                           className="form-control rounded-pill ps-5"/>
-                    <i className="bi bi-search position-absolute
-                       wd-nudge-up"></i>
+                    <FontAwesomeIcon icon={faSearch} className="ms-4 position-absolute top-50 start-1 translate-middle-y wd-magnify-glass"/>
+                    <input className="form-control rounded-pill ps-5" placeholder="Search Tuiter"/>
                 </div>
                 <div className="col-1">
                     <i className="wd-bottom-4 text-primary float-end bi
