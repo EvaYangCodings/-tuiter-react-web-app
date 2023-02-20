@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Labs from "./labs";
+import HelloWorld from "./labs/a6/hello-world";
+import Tuiter from "./tuiter";
 function App() {
   return (
     // <div className="App">
@@ -19,7 +21,15 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-      <h1>Hello World!</h1>
+      <div>
+        <h1 className="container">
+            <HelloWorld/>
+            <Labs/>
+            <Tuiter/>
+        </h1>
+
+      </div>
+
   );
 }
 
