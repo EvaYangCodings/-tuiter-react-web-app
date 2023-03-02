@@ -1,0 +1,28 @@
+export default [
+    {
+        logo: '../images/northeastern.png',
+        userName: 'Northeastern University',
+        handle: '@northeastern university',
+        time: '2h',
+        text: 'It is a great day to be a Husky.',
+        image: '../../images/husky.jpeg',
+        article: 'BOSTON — In the first iteration of the Beanpot final to ever feature Northeastern and Harvard, the TD Garden crowd also saw the tournament\'s first 3-on-3 + shootout championship game.',
+        reply: '3.5k',
+        retweet: '3k',
+        like: '5k',
+        share: '6.5k',
+    },
+    {
+        logo: '../../images/canada.jpeg',
+        userName: 'Maple Canada',
+        handle: '@maple canada',
+        time: '2h',
+        text: 'The best nightlife in Toronto covers vintage barcades, packed clubs and storied music venues. Get ready to party!',
+        image: '../../images/toronto.jpeg',
+        article: 'Toronto knows how to have fun. Don’t believe us? Get yourself on a night out in The Six, and you’ll see what we are talking about. This might be the best night out in Canada, although what else would you expect from the country’s most populous city? Torontonians love to party, whatever the weather. The queues in winter are every bit as long as they are in summer, showcasing a commitment to nightlife that deserves applause. The best bars in Toronto are a celebration of that and much more.',
+        reply: '13.5k',
+        retweet: '3k',
+        like: '50k',
+        share: '16.5k',
+    },
+];
