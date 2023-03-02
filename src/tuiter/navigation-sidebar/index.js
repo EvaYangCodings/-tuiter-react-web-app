@@ -2,7 +2,7 @@ import React from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {a} from "react-router-dom";
+// import {a} from "react-router-dom";
 import { faHome, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 
 const NavigationSidebar = (
