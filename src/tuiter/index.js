@@ -9,8 +9,7 @@ function Tuiter() {
             <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
                 <NavigationSidebar active="home"/>
             </div>
-            <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11"
-                 style={{"position": "relative"}}>
+            <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11 wd-central-part-react">
                 <HomeComponent/>
             </div>
             <div className="col-4 d-none d-lg-block">
