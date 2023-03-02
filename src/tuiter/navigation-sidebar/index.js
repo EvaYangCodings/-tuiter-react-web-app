@@ -74,8 +74,8 @@ const NavigationSidebar = (
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">More</span>
                     </div>
                 </a>
-
-            </div>
+                <button className="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
+        </div>
     );
 };
 

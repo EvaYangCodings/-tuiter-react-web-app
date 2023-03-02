@@ -1,0 +1,33 @@
+.wd-logo {
+    padding-left:4px;
+}
+.wd-logo > img {
+    width: 50px;
+}
+.wd-post-image {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.wd-image-box {
+    padding: 0px;
+}
+
+.wd-post-box {
+    border-radius: 15px;
+}
+.wd-post-article {
+    padding: 10px;
+}
+/*.wd-userName {*/
+/*    font-size: 15px;*/
+/*    padding: 0px;*/
+/*}*/
+.wd-single-post {
+    border-bottom: 1px solid lightgrey;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+.wd-central-part {
+    border: 1px solid lightgrey
+}
