@@ -14,9 +14,9 @@ const NavigationSidebar = () => {
     const active = paths[2];
     return (
         <div className="list-group">
-                <a to="#" className="list-group-item d-none d-xl-inline-block" aria-hidden="true">
+                <Link to="#" className="list-group-item d-none d-xl-inline-block" aria-hidden="true">
                     <FontAwesomeIcon icon={['fab', 'twitter']} color="#0d6efd"/>
-                </a>
+                </Link>
 
                 <Link to="/tuiter/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
@@ -39,42 +39,42 @@ const NavigationSidebar = () => {
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Labs</span>
                     </div>
                 </Link>
-                <a to="#" className={`list-group-item
+                <Link to="#" className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faEnvelope}/>
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Messages</span>
                     </div>
-                </a>
-                <a to="#" className={`list-group-item
+                </Link>
+                <Link to="#" className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faBookmark}/>
                         <span className="nav-a-text ms-3 d-none d-xl-inline-block">Bookmarks</span>
                     </div>
-                </a>
-                <a to="#" className={`list-group-item
+                </Link>
+                <Link to="#" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faList}/>
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Lists</span>
                     </div>
-                </a>
+                </Link>
 
-                <a to="#" className={`list-group-item
+                <Link to="#" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faUser}/>
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Profile</span>
                     </div>
-                </a>
-                <a to="#" className={`list-group-item
+                </Link>
+                <Link to="#" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faEllipsisH}/>
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">More</span>
                     </div>
-                </a>
+                </Link>
                 <button className="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
         </div>
     );
