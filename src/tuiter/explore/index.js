@@ -1,7 +1,7 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
-import {faEllipsisH, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const ExploreComponent = () => {
     return(
@@ -13,7 +13,7 @@ const ExploreComponent = () => {
                 </div>
                 <div className="col-1">
                     <i className="wd-bottom-4 text-primary float-end bi
-                       bi-gear-fill fs-2 position-relative"></i>
+                       bi-gear-fill fs-2 position-relative"/>
                 </div>
             </div>
             <ul className="nav nav-pills mb-2">
@@ -28,7 +28,7 @@ const ExploreComponent = () => {
                 </li>
             </ul>
             <div className="position-relative mb-2">
-                <img src="../../images/Starship.png" className="w-100"/>
+                <img alt="" src="../../images/Starship.png" className="w-100"/>
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
