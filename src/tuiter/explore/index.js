@@ -1,8 +1,9 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
-import {faEllipsisH, faSearch, faGear} from "@fortawesome/free-solid-svg-icons";
+import {faSearch, faGear} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 const ExploreComponent = () => {
     return(
         <>
@@ -17,17 +18,17 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav nav-pills mb-1 mt-2">
                 <li className="nav-item">
-                    <a className="nav-link active">For You</a>
+                    <Link className="nav-link active">For You</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Trending</a>
+                    <Link className="nav-link">Trending</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">News</a>
+                    <Link className="nav-link">News</Link>
                 </li>
             </ul>
             <div className="position-relative mb-2">
-                <img src="../../images/Starship.png" className="w-100"/>
+                <img alt="" src="../../images/Starship.png" className="w-100"/>
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
