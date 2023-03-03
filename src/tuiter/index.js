@@ -2,20 +2,30 @@ import React from "react";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import HomeComponent from "./home";
+import {Route, Routes} from "react-router";
+import ExploreComponent from "./explore";
 
 function Tuiter() {
     return (
-        <div className="row mt-2 mb-2">
-            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
-                <NavigationSidebar active="home"/>
+
+            <div className="row mt-2 mb-2">
+                <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
+                    <NavigationSidebar active="home"/>
+                </div>
+
+                <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11 wd-central-part-react">
+                    <Routes>
+                        <Route index   element={<HomeComponent/>}/>
+                        <Route path="home"    element={<HomeComponent/>}/>
+                        <Route path="explore" element={<ExploreComponent/>}/>
+                    </Routes>
+                </div>
+                <div className="col-4 d-none d-lg-block">
+                    <WhoToFollowList/>
+                </div>
             </div>
-            <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11 wd-central-part-react">
-                <HomeComponent/>
-            </div>
-            <div className="col-4 d-none d-lg-block">
-                <WhoToFollowList/>
-            </div>
-        </div>
+
+
     );
 }
 

@@ -21,7 +21,7 @@ const PostItem =(
 ) => {
     return (
         <div className="row">
-            <div className="col-1 wd-logo-react">
+            <div className="col-1 wd-logo-react ps-1">
                 <img className="rounded-circle" src={post.logo}/>
             </div>
                     
