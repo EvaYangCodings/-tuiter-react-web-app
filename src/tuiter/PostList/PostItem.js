@@ -1,5 +1,4 @@
 import React from "react";
-import post from "./posts.json"
 import {faCircleCheck, faEllipsisH, faCommentDots, faHeart, faRetweet, faShare} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -22,7 +21,7 @@ const PostItem =(
     return (
         <div className="row">
             <div className="col-1 wd-logo-react ps-1">
-                <img className="rounded-circle" src={post.logo}/>
+                <img alt="" className="rounded-circle" src={post.logo}/>
             </div>
                     
             <div className="col-11 ps-4">
@@ -43,7 +42,7 @@ const PostItem =(
                 <div className="row mt-2">
                     <ul className="list-group wd-post-box">
                         <li className="list-group-item wd-image-box">
-                            <img className="wd-post-image" src={post.image}/>
+                            <img alt="" className="wd-post-image" src={post.image}/>
                         </li>
                         <li className="list-group-item wd-post-article">{post.article}</li>
                     </ul>

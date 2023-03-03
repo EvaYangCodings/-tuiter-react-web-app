@@ -10,7 +10,7 @@ function PostList (){
             </div>
             ))
     )
-};
+}
 
 export default PostList;
 
