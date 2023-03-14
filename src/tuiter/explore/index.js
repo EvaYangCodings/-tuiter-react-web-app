@@ -1,30 +1,33 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
-import {faSearch} from "@fortawesome/free-solid-svg-icons";
+
+import {faSearch, faGear} from "@fortawesome/free-solid-svg-icons";
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 const ExploreComponent = () => {
     return(
-        <>
-            <div className="row">
+        <div>
+            <div className="row pt-1">
                 <div className="col-11 position-relative">
                     <FontAwesomeIcon icon={faSearch} className="ms-4 position-absolute top-50 start-1 translate-middle-y wd-magnify-glass"/>
                     <input className="form-control rounded-pill ps-5" placeholder="Search Tuiter"/>
                 </div>
-                <div className="col-1">
-                    <i className="wd-bottom-4 text-primary float-end bi
-                       bi-gear-fill fs-2 position-relative"/>
+                <div className="col-1 mt-1">
+                    <FontAwesomeIcon  icon={faGear} className="wd-bottom-4 text-primary float-end fs-2 position-relative"/>
+
                 </div>
             </div>
-            <ul className="nav nav-pills mb-2">
+            <ul className="nav nav-pills mb-1 mt-2">
                 <li className="nav-item">
-                    <a className="nav-link active">For You</a>
+                    <Link className="nav-link active">For You</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Trending</a>
+                    <Link className="nav-link">Trending</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">News</a>
+                    <Link className="nav-link">News</Link>
                 </li>
             </ul>
             <div className="position-relative mb-2">
@@ -33,7 +36,7 @@ const ExploreComponent = () => {
                     SpaceX Starship</h1>
             </div>
             <PostSummaryList/>
-        </>
+        </div>
     );
 };
 export default ExploreComponent;

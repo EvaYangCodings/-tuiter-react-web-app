@@ -1,6 +1,6 @@
 const PostItem =(post) => {
     return (`      
-            <div class="col-1 wd-logo">
+            <div class="col-1 wd-logo-react">
                 <img class="rounded-circle" src="${post.logo}">
             </div>
                     

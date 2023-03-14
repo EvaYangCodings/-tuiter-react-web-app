@@ -12,7 +12,7 @@ function WhoToFollowList (){
             {
                 who.map(user => 
                     <WhoToFollowListItem
-                        key={user._id}
+                        key={user.id}
                         who={user}/>
                 
                 )
