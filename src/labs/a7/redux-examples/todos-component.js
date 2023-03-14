@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {addTodo, deleteTodo} from "./reducers/todos-reducer";
+import {addTodo, deleteTodo, todoDoneToggle} from "./reducers/todos-reducer";
 const  Todos = () => {
     const todos
         = useSelector(state => state.todos);
@@ -20,6 +20,9 @@ const  Todos = () => {
             do: doValue
         };
         setTodo(newTodo);
+    }
+    const toggleTodoDone = (todo) => {
+        dispatch(todoDoneToggle(todo))
     }
 
     return(
@@ -43,6 +46,11 @@ const  Todos = () => {
                             className="btn btn-danger float-end ms-2">
                                 Delete
                             </button>
+                            <input type="checkbox"
+                                   checked={todo.done}
+                                   onChange={() =>
+                                       toggleTodoDone(todo)}
+                                   className="me-2"/>
                             {todo.do}
                         </li>
                     )
