@@ -4,9 +4,12 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import {configureStore} from "@reduxjs/toolkit";
 import whoReducer from "./reducers/who-reducer"
+import tuitsReducer from "./tuits/tuits-reducer"
 import {Provider} from "react-redux";
 
-const store = configureStore({reducer: {who:whoReducer}})
+const store = configureStore({
+    reducer: {who:whoReducer, tuits: tuitsReducer}
+})
 function Tuiter() {
     return (
         <Provider store={store}>
