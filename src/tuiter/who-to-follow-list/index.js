@@ -16,7 +16,6 @@ function WhoToFollowList (){
                     <WhoToFollowListItem
                         key={user.id}
                         user={user}/>
-
                 )
             }
         </ul>

@@ -1,4 +1,4 @@
-.wd-logo {
+.wd-logo-react {
     padding-left:4px;
 }
 .wd-logo-react > img {
@@ -28,6 +28,6 @@
     padding-top: 5px;
     padding-bottom: 8px;
 }
-.wd-central-part {
+.wd-central-part-react {
     border: 1px solid lightgrey
 }
