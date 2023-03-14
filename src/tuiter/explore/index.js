@@ -1,7 +1,9 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
+
 import {faSearch, faGear} from "@fortawesome/free-solid-svg-icons";
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
 const ExploreComponent = () => {
@@ -14,6 +16,7 @@ const ExploreComponent = () => {
                 </div>
                 <div className="col-1 mt-1">
                     <FontAwesomeIcon  icon={faGear} className="wd-bottom-4 text-primary float-end fs-2 position-relative"/>
+
                 </div>
             </div>
             <ul className="nav nav-pills mb-1 mt-2">

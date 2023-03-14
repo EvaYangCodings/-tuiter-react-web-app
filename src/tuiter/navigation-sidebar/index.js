@@ -4,6 +4,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {a} from "react-router-dom";
 import { faHome, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+
 import {useLocation} from "react-router";
 import {Link} from "react-router-dom";
 
@@ -18,22 +19,28 @@ const NavigationSidebar = () => {
                     <FontAwesomeIcon icon={['fab', 'twitter']} color="#0d6efd"/>
                 </Link>
 
+
                 <Link to="/tuiter/home" className={`list-group-item
+
                     ${active === 'home'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faHome}/>
                         <span className="nav-a-text ms-2 d-none d-xl-inline-block">Home</span>
                     </div>
                 </Link>
+
                 <Link to="/tuiter/explore" className={`list-group-item
+
                     ${active === 'explore'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faHashtag}/>
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Explore</span>
                     </div>
                 </Link>
+
                 <Link to="/" className={`list-group-item
                     ${active === 'labs'?'active':''}`}>
+
                     <div>
                         <FontAwesomeIcon icon={faBell}/>
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">Labs</span>
@@ -75,8 +82,10 @@ const NavigationSidebar = () => {
                         <span className="nav-a-text ms-2 ps-1 d-none d-xl-inline-block">More</span>
                     </div>
                 </Link>
+
                 <button className="btn btn-primary w-100 mt-1 rounded-pill">Tuit</button>
         </div>
+
     );
 };
 
