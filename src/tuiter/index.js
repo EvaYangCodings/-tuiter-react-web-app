@@ -2,21 +2,27 @@ import React from "react";
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
+import {configureStore} from "@reduxjs/toolkit";
+import whoReducer from "./reducers/who-reducer"
+import {Provider} from "react-redux";
 
+const store = configureStore({reducer: {who:whoReducer}})
 function Tuiter() {
     return (
-        <div className="row mt-2 mb-2">
-            <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
-                <NavigationSidebar active="explore"/>
+        <Provider store={store}>
+            <div className="row mt-2 mb-2">
+                <div className="col-xl-2 col-lg-1 col-md-2 col-sm-2 col-1">
+                    <NavigationSidebar active="explore"/>
+                </div>
+                <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11"
+                     style={{"position": "relative"}}>
+                    <ExploreComponent/>
+                </div>
+                <div className="col-4 d-none d-lg-block">
+                    <WhoToFollowList/>
+                </div>
             </div>
-            <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10 col-11"
-                 style={{"position": "relative"}}>
-                <ExploreComponent/>
-            </div>
-            <div className="col-4 d-none d-lg-block">
-                <WhoToFollowList/>
-            </div>
-        </div>
+        </Provider>
     );
 }
 
