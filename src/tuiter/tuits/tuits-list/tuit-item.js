@@ -21,7 +21,7 @@ const TuitItem = (
     }
 ) => {
     return (
-            <li className="list-group-item col-11 ps-4">
+            <li className="list-group-item">
                 <div className="row">
                     <div className="col-1 wd-logo-react ps-1 me-4">
                         <img alt="" className="rounded-circle" src={tuit.image}/>

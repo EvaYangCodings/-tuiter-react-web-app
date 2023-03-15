@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const TuitsList = () => {
     const postsArray = useSelector(state => state.tuits)
     return(
-        <ul className="list-group mb-2 wd-single-post">
+        <ul className="list-group mb-2">
             {
                 postsArray.map(post =>
                     <TuitItem
