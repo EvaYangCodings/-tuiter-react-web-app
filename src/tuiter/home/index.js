@@ -1,9 +1,9 @@
 import React from "react";
-import PostList from "../PostList";
 import "./index.css";
+import TuitsList from "../tuits/tuits-list";
 const HomeComponent = () => {
     return (
-        <PostList/>
+        <TuitsList/>
     )
 }
 
