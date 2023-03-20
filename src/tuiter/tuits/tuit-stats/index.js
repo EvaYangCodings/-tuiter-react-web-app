@@ -4,11 +4,11 @@ import React from "react";
 import {useSelector} from "react-redux";
 
 const TuitStats = () => {
-    const post = useSelector(state => state)
+    const post = useSelector(state => state.tuits)
     return (
         <div className="row mt-2">
             <div className="col">
-                <FontAwesomeIcon icon={faCommentDots} /> {post.replies}
+                <FontAwesomeIcon icon={faCommentDots} /> {post.name}
             </div>
             <div className="col"><FontAwesomeIcon icon={faRetweet} /> {post.retuits}</div>
             <div className="col"><FontAwesomeIcon icon={faHeart} /> {post.likes}</div>
