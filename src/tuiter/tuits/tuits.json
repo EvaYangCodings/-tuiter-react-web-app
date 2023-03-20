@@ -5,9 +5,9 @@
   "time": "2h",
   "image": "../../../images/Relativity.jpeg",
   "liked" :false,
-  "replies" : 20,
-  "retuits":  10,
-  "likes" :  200,
+  "replies" : 10,
+  "retuits":  30,
+  "likes" :  900,
   "handle" : "@Relativity",
   "tuit" : "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"},
 
@@ -29,11 +29,11 @@
     "userName": "Virgin",
     "title": "Virgin FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
     "time": "4d",
-    "image": "../../../images/vigin.svg",
+    "image": "../../../images/teslaRedBackground.jpeg",
     "liked" : false,
-    "replies" :  20,
-    "retuits" :  10,
-    "likes" :  200,
+    "replies" :  2,
+    "retuits" :  1,
+    "likes" :  20,
     "handle" : "@Virgin",
     "tuit" : "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars" }
 ]

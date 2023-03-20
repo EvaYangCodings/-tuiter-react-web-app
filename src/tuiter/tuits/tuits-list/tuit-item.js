@@ -10,7 +10,7 @@ const TuitItem = (
             "userName": "SpaceX",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
             "time": "2h",
-            "image": "src/images/vigin.svg",
+            "image": "src/images/teslaRedBackground.jpeg",
             "liked" :false,
             "replies" : 20,
             "retuits":  10,
@@ -38,7 +38,7 @@ const TuitItem = (
                         <div className="mt-2">
                             {tuit.tuit}
                         </div>
-                        <TuitStats/>
+                        <TuitStats stats={tuit}/>
                     </div>
                  </div>
             </li>
