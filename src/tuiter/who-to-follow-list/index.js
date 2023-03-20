@@ -11,17 +11,14 @@ function WhoToFollowList (){
             <li className = "list-group-item">
                 <h3>Who to follow</h3>
             </li>
-            {
-                whoArray.map(user =>
-                    <WhoToFollowListItem
-                        key={user.id}
-                        user={user}/>
-                )
-            }
+                {
+                    whoArray.map(user =>
+                        <WhoToFollowListItem
+                            key={user.id}
+                            user={user}/>
+                    )
+                }
         </ul>
-        // <div>
-        //     <h1>Who To Follow!!</h1>
-        // </div>
     )
 }
 

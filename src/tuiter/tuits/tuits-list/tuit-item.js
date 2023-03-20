@@ -1,6 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCircleCheck, faEllipsisH} from "@fortawesome/free-solid-svg-icons";
+import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import TuitStats from "../tuit-stats";
 
 const TuitItem = (
@@ -10,7 +10,7 @@ const TuitItem = (
             "userName": "SpaceX",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
             "time": "2h",
-            "image": "../../../images/relativity.jpeg",
+            "image": "src/images/vigin.svg",
             "liked" :false,
             "replies" : 20,
             "retuits":  10,
