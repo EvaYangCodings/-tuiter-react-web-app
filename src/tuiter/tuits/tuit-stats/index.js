@@ -41,10 +41,9 @@ const TuitStats = (
                 <FontAwesomeIcon icon={faCommentDots} /> {stats.replies}
             </div>
             <div className="col"><FontAwesomeIcon icon={faRetweet} /> {stats.retuits}</div>
-            <div className="col">
+            <div className="col" onClick={handleLike}>
                 <FontAwesomeIcon
                     icon={faHeart}
-                    onClick={handleLike}
                     style={{ color: post.liked ? "red" : "black", cursor: "pointer" }}
                 />{" "}
                 {post.likes}
