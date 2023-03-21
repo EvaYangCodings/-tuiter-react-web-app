@@ -21,7 +21,7 @@ const NavigationSidebar = () => {
 
                 <Link to="/tuiter/home" className={`list-group-item
 
-                    ${active === 'home' || active ===''?'active':''}`}>
+                    ${active === 'home' || active ==='' || paths.length === 2?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faHome}/>
                         <span className="nav-a-text ms-2 d-none d-xl-inline-block">Home</span>

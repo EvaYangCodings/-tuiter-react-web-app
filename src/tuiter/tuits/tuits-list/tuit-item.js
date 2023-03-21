@@ -30,7 +30,7 @@ const TuitItem = (
                         <div>
                             <span>
                                 <span className="fw-bold me-1">{tuit.userName}</span>
-                                <FontAwesomeIcon icon={faCircleCheck}/>
+                                <FontAwesomeIcon icon={faCircleCheck} color="#007bff"/>
                                 <span className="ms-1">{tuit.handle}</span>
                                 <span className="text-secondary"> . {tuit.time}</span>
                             </span>
