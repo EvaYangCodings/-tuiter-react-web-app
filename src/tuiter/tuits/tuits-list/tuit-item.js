@@ -2,6 +2,8 @@ import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import TuitStats from "../tuit-stats";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../tuits-reducer";
 
 const TuitItem = (
     {
@@ -20,6 +22,11 @@ const TuitItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+
     return (
             <li className="list-group-item">
                 <div className="row">
@@ -33,6 +40,9 @@ const TuitItem = (
                                 <FontAwesomeIcon icon={faCircleCheck} color="#007bff"/>
                                 <span className="ms-1">{tuit.handle}</span>
                                 <span className="text-secondary"> . {tuit.time}</span>
+                                <i className="bi bi-x-lg float-end"
+                                    onClick={() => deleteTuitHandler(tuit.id)}
+                                />
                             </span>
                         </div>
                         <div className="mt-2">
