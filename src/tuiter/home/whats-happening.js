@@ -1,14 +1,20 @@
 import React, {useState} from "react";
+import {useDispatch} from "react-redux";
+import {createTuit} from "../tuits/tuits-reducer";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
+    const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        console.log(whatsHappening);
+        const newTuit = {
+            tuit:whatsHappening
+        }
+        dispatch(createTuit(newTuit));
     }
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="/images/teslaRedBackground.jpeg" width={60}/>
+                <img className="rounded-circle ms-2" src="/images/nasa.jpeg" width={50}/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
