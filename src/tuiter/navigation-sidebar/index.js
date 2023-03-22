@@ -67,7 +67,7 @@ const NavigationSidebar = () => {
                     </div>
                 </Link>
 
-                <Link to="#" className={`list-group-item
+                <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faUser}/>

@@ -1,0 +1,10 @@
+.wd-profile-photo {
+    top:100px;
+    left: 30px;
+    background-color: white;
+    border: solid white 5px;
+}
+
+.wd-user-name {
+    margin-top: 70px;
+}
