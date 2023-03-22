@@ -51,21 +51,31 @@ const ProfileComponent = () => {
             <div className="wd-user-name"><h4>{user.firstName}{' '}{user.lastName}</h4></div>
             <div>{user.handle}</div>
             <div className="mt-3">{user.bio}</div>
-            <div className="row text-secondary mt-1">
-                <div className="col-3 pe-0 me-0">
-                    <i className="bi bi-geo-alt me-1"/>{user.location}
-                </div>
-                <div className="col-2 ps-0 ms-0">
-                    <i className="bi bi-balloon me-1"/>{formatDate(user.dateOfBirth)}
-                </div>
-                <div className="col-3 ps-0 ms-0">
-                    <i className="bi bi-calendar-check me-1"/>Joined{' '}{formatDate(user.dateJoined)}
+            <div className="row">
+                <div className="col-10 text-secondary mt-1">
+                    <div className="row">
+                        <div className="col-3">
+                            <i className="bi bi-geo-alt me-1"/>{user.location}
+                        </div>
+                        <div className="col-3">
+                            <i className="bi bi-balloon me-1"/>{formatDate(user.dateOfBirth)}
+                        </div>
+                        <div className="col-4 ps-0 ms-0">
+                            <i className="bi bi-calendar-check me-1"/>Joined{' '}{formatDate(user.dateJoined)}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="row mt-2">
-                <div className="col-3"><span className="fw-bold">{user.followingCount}</span>{' '}Following</div>
-                <div className="col-3 ms-0 ps-0"><span className="fw-bold">{user.followersCount}</span>{' '}Followers</div>
-            </div>
+                <div className="row">
+                    <div className="col-8">
+                        <div className="row">
+                            <div className="col-4"><span className="fw-bold">{user.followingCount}</span>{' '}Following</div>
+                            <div className="col-4 ms-0 ps-0"><span className="fw-bold">{user.followersCount}</span>{' '}Followers</div>
+                        </div>
+                    </div>
+                </div>
+               </div>
         </>
 
 
