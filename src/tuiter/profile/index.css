@@ -8,3 +8,10 @@
 .wd-user-name {
     margin-top: 70px;
 }
+.wd-edit-button {
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: black;
+    font-weight: bold;
+    padding: 5px 8px 5px 8px;
+}
