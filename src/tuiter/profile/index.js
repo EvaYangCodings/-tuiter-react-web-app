@@ -72,8 +72,8 @@ const ProfileComponent = () => {
                 <div className="row">
                     <div className="col-auto">
                         <div className="row">
-                            <div className="col d-flex align-items-center"><span className="fw-bold">{user.followingCount}</span>{' '}Following</div>
-                            <div className="col d-flex align-items-center"><span className="fw-bold">{user.followersCount}</span>{' '}Followers</div>
+                            <div className="col d-flex align-items-center"><span className="fw-bold me-1">{user.followingCount}</span>Following</div>
+                            <div className="col d-flex align-items-center"><span className="fw-bold me-1">{user.followersCount}</span>Followers</div>
                         </div>
                     </div>
                 </div>
