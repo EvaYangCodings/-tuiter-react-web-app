@@ -1,11 +1,25 @@
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {updateField} from "../reducers/profile-reducer";
 
 const EditProfile = () => {
     const user = useSelector(state => state.profile)
     const dispatch = useDispatch();
+    const [initialUser, setInitialUser] = useState(user);
+
+    useEffect(() => {
+        setInitialUser(user);
+    }, []);
+
+    const cancelChanges = () => {
+        dispatch(updateField({ field: "firstName", value: initialUser.firstName }));
+        dispatch(updateField({ field: "lastName", value: initialUser.lastName }));
+        dispatch(updateField({ field: "bio", value: initialUser.bio }));
+        dispatch(updateField({ field: "location", value: initialUser.location }));
+        dispatch(updateField({ field: "website", value: initialUser.website }));
+        dispatch(updateField({ field: "dateOfBirth", value: initialUser.dateOfBirth }));
+    };
     const formatDate = (dateString) => {
         if (dateString.includes('/')) {
             const parts = dateString.split('/');
@@ -39,7 +53,8 @@ const EditProfile = () => {
             <div className="row align-bottom">
                 <div className="col-1">
                     <Link to="/tuiter/profile">
-                        <i className="bi bi-x-lg"/>
+                        <i className="bi bi-x-lg"
+                            onClick={cancelChanges}/>
                     </Link>
                 </div>
                 <div className="col-9 fs-5 fw-bold">Edit profile</div>
