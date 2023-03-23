@@ -54,15 +54,15 @@ const ProfileComponent = () => {
             <div>{user.handle}</div>
             <div className="mt-3">{user.bio}</div>
             <div className="row">
-                <div className="col-10 text-secondary mt-1">
+                <div className="col-auto text-secondary mt-1">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col d-flex align-items-center text-nowrap">
                             <i className="bi bi-geo-alt me-1"/>{user.location}
                         </div>
-                        <div className="col-3">
+                        <div className="col d-flex align-items-center">
                             <i className="bi bi-balloon me-1"/>{formatDate(user.dateOfBirth)}
                         </div>
-                        <div className="col-4 ps-0 ms-0">
+                        <div className="col d-flex align-items-center text-nowrap">
                             <i className="bi bi-calendar-check me-1"/>Joined{' '}{formatDate(user.dateJoined)}
                         </div>
                     </div>
@@ -70,10 +70,10 @@ const ProfileComponent = () => {
             </div>
             <div className="row mt-2">
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-auto">
                         <div className="row">
-                            <div className="col-4"><span className="fw-bold">{user.followingCount}</span>{' '}Following</div>
-                            <div className="col-4 ms-0 ps-0"><span className="fw-bold">{user.followersCount}</span>{' '}Followers</div>
+                            <div className="col d-flex align-items-center"><span className="fw-bold">{user.followingCount}</span>{' '}Following</div>
+                            <div className="col d-flex align-items-center"><span className="fw-bold">{user.followersCount}</span>{' '}Followers</div>
                         </div>
                     </div>
                 </div>

@@ -57,9 +57,11 @@ const EditProfile = () => {
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Name</label>
-                <input type="text" className="border-0 ps-0"
-                       value={`${user.firstName}${user.lastName ? " " : ""}${user.lastName}`}
-                       onChange={handleChange("name")}
+                <textarea
+                    className="border-0 ps-0"
+                    rows="1"
+                    value={`${user.firstName}${user.lastName ? " " : ""}${user.lastName}`}
+                    onChange={handleChange("name")}
                 />
             </div>
             <div className="wd-edit-profile-border wd-input-container">
@@ -71,25 +73,30 @@ const EditProfile = () => {
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Location</label>
-                <input type="text" className="border-0 ps-0"
-                       value={user.location}
-                       onChange={handleChange("name")}
+                <textarea
+                    className="border-0 ps-0"
+                    rows="1"
+                    value={user.location}
+                    onChange={handleChange("location")}
                 />
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Website</label>
-                <input type="text" className="border-0 ps-0"
-                       value={user.website}
-                       onChange={handleChange("name")}
+                <textarea
+                    className="border-0 ps-0"
+                    rows="1"
+                    value={user.website}
+                    onChange={handleChange("website")}
                 />
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Birth date.
                     <Link>Edit</Link>
                 </label>
-                <input type="text" className="border-0 ps-0"
-                       value={formatDate(user.dateOfBirth)}
-                       onChange={handleChange("name")}
+                <textarea
+                    className="border-0 ps-0"
+                    rows="1"
+                    value={formatDate(user.dateOfBirth)}
                 />
             </div>
         </div>
