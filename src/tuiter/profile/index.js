@@ -45,7 +45,9 @@ const ProfileComponent = () => {
                 <img alt="" className="position-absolute w-25 rounded-circle wd-profile-photo"
                      src="../../images/react.jpeg"
                 />
-                <button className="float-end mt-3 rounded-pill wd-edit-button">Edit profile</button>
+                <Link to="/tuiter/edit-profile">
+                    <button className="float-end mt-3 rounded-pill wd-edit-button">Edit profile</button>
+                </Link>
             </div>
 
             <div className="wd-user-name"><h4>{user.firstName}{' '}{user.lastName}</h4></div>

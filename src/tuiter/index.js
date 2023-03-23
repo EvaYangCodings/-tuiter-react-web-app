@@ -10,6 +10,7 @@ import HomeComponent from "./home";
 import {Route, Routes} from "react-router";
 import ExploreComponent from "./explore";
 import ProfileComponent from "./profile";
+import EditProfile from "./edit-profile";
 
 const store = configureStore({
     reducer: {who:whoReducer, tuits: tuitsReducer, profile: profileReducer}
@@ -27,6 +28,7 @@ function Tuiter() {
                         <Route path="home"    element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="edit-profile" element={<EditProfile/>}/>
                     </Routes>
                 </div>
                 <div className="col-4 d-none d-lg-block">

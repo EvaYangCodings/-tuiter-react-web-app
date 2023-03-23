@@ -21,6 +21,12 @@ const currentUser = {
 const profileSlice = createSlice({
     name: 'profile',
     initialState: currentUser,
+    reducers: {
+        updateField(state, action) {
+            const { field, value } = action.payload;
+            state[field] = value;
+        },
+    },
 });
-
+export const {updateField}=profileSlice.actions;
 export default profileSlice.reducer;
