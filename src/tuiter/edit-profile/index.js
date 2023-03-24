@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {updateField} from "../reducers/profile-reducer";
+import {updateField, updateName} from "../reducers/profile-reducer";
 
 const EditProfile = () => {
     const user = useSelector(state => state.profile)
@@ -39,11 +39,7 @@ const EditProfile = () => {
     };
     const handleChange = (field) => (e) => {
         if (field === "name") {
-            const nameParts = e.target.value.trim().split(" ");
-            const firstName = nameParts[0] || "";
-            const lastName = nameParts.slice(1).join(" ") || "";
-            dispatch(updateField({ field: "firstName", value: firstName }));
-            dispatch(updateField({ field: "lastName", value: lastName }));
+            dispatch(updateName({field, value: e.target.value }));
         } else {
             dispatch(updateField({ field, value: e.target.value }));
         }
@@ -72,34 +68,31 @@ const EditProfile = () => {
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Name</label>
-                <textarea
-                    className="border-0 ps-0"
-                    rows="1"
+                <input
+                    className="form-control border-0 ps-0"
                     value={`${user.firstName}${user.lastName ? " " : ""}${user.lastName}`}
                     onChange={handleChange("name")}
                 />
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Bio</label>
-                <textarea className="border-0 ps-0"
+                <textarea className="form-control border-0 ps-0"
                           value={user.bio}
                           onChange={handleChange("bio")}>
                 </textarea>
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Location</label>
-                <textarea
-                    className="border-0 ps-0"
-                    rows="1"
+                <input
+                    className="form-control border-0 ps-0"
                     value={user.location}
                     onChange={handleChange("location")}
                 />
             </div>
             <div className="wd-edit-profile-border wd-input-container">
                 <label className="text-secondary">Website</label>
-                <textarea
-                    className="border-0 ps-0"
-                    rows="1"
+                <input
+                    className="form-control border-0 ps-0"
                     value={user.website}
                     onChange={handleChange("website")}
                 />
@@ -108,9 +101,8 @@ const EditProfile = () => {
                 <label className="text-secondary">Birth date.
                     <Link>Edit</Link>
                 </label>
-                <textarea
-                    className="border-0 ps-0"
-                    rows="1"
+                <input
+                    className="form-control border-0 ps-0"
                     value={formatDate(user.dateOfBirth)}
                 />
             </div>

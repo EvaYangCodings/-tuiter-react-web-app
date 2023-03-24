@@ -26,7 +26,13 @@ const profileSlice = createSlice({
             const { field, value } = action.payload;
             state[field] = value;
         },
+        updateName(state, action) {
+            const {value} = action.payload;
+            const newName = value.split(' ');
+            state.firstName = newName[0] ||'';
+            state.lastName = newName[1] || '';
+        }
     },
 });
-export const {updateField}=profileSlice.actions;
+export const {updateField, updateName}=profileSlice.actions;
 export default profileSlice.reducer;
