@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 import tuits from './tuits.json';
-import { findTuitsThunk } from "../../services/tuits-thunks";
+import { deleteTuitThunk, findTuitsThunk } from "../../services/tuits-thunks";
 
 const initialState = {
     tuits: [],
@@ -24,7 +24,12 @@ const tuitsSlice = createSlice({
            (state, action) => {
               state.loading = false
               state.error = action.error
-        }
+        },
+        [deleteTuitThunk.fulfilled]:
+            (state, {payload}) => {
+                state.loading = false
+                state.tuits = state.tuits.filter(t => t.id !== payload)
+            }
       },
      
 
