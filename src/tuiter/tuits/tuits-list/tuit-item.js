@@ -8,7 +8,7 @@ import { deleteTuitThunk } from "../../../services/tuits-thunks";
 
 const TuitItem = (
     {
-        tuit = { "id": 123,
+        tuit = { "_id": 123,
             "topic": "Space",
             "userName": "SpaceX",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
@@ -24,8 +24,8 @@ const TuitItem = (
     }
 ) => {
     const dispatch = useDispatch();
-    const deleteTuitHandler = (id) => {
-        dispatch(deleteTuitThunk(id));
+    const deleteTuitHandler = (_id) => {
+        dispatch(deleteTuitThunk(_id));
     }
 
     return (
@@ -42,7 +42,7 @@ const TuitItem = (
                                 <span className="ms-1">{tuit.handle}</span>
                                 <span className="text-secondary"> . {tuit.time}</span>
                                 <i className="bi bi-x-lg float-end"
-                                    onClick={() => deleteTuitHandler(tuit.id)}
+                                    onClick={() => deleteTuitHandler(tuit._id)}
                                 />
                             </span>
                         </div>

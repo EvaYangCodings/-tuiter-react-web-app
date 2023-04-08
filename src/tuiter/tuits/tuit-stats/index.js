@@ -3,9 +3,9 @@ import {faCommentDots, faHeart, faRetweet, faShare, faThumbsDown} from "@fortawe
 import React from "react";
 import { useDispatch } from "react-redux";
 import { updateTuitThunk } from "../../../services/tuits-thunks";
-const TuitStats = (
+const  TuitStats = (
     {
-        stats = { "id": 123,
+        stats = { "_id": 123,
             "topic": "Space",
             "userName": "SpaceX",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
