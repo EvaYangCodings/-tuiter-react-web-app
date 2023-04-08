@@ -1,18 +1,18 @@
 import React from "react";
-const WhoToFollowListItem = (
+const userToFollowListItem = (
     {
-        who = {userName: 'NASA', handle: 'NASA', avatarIcon:'nasa.jpeg'}
+        user = {userName: 'NASA', handle: 'NASA', avatarIcon:'nasa.jpeg'}
     }
 ) => {
     return(
         <li className="list-group-item">
             <div className="row mb-2">
                 <div className="col-2 pe-0 align-self-center">
-                    <img alt="" className="rounded-circle" height={48} src={`../../images/${who.avatarIcon}`}/>
+                    <img alt="" className="rounded-circle" height={48} src={`../../images/${user.avatarIcon}`}/>
                 </div>
                 <div className="col-8 pe-0 align-self-center">
-                    <div className="fw-bold">{who.userName}</div>
-                    <div className="text-secondary">@{who.handle}</div>
+                    <div className="fw-bold">{user.userName}</div>
+                    <div className="text-secondary">@{user.handle}</div>
                 </div>
                 <div className="col-2 pe-0 align-self-center">
                     <button className="btn btn-primary rounded-pill float-end">Follow</button>
@@ -23,4 +23,4 @@ const WhoToFollowListItem = (
     );
 };
 
-export default WhoToFollowListItem;
+export default userToFollowListItem;

@@ -47,14 +47,6 @@ const PostItem =(
                         <li className="list-group-item wd-post-article">{post.article}</li>
                     </ul>
                 </div>
-                <div className="row mt-2">
-                    <div className="col">
-                        <FontAwesomeIcon icon={faCommentDots} /> {post.reply}
-                    </div>
-                    <div className="col"><FontAwesomeIcon icon={faRetweet} /> {post.retweet}</div>
-                    <div className="col"><FontAwesomeIcon icon={faHeart} /> {post.like}</div>
-                    <div className="col"><FontAwesomeIcon icon={faShare} /> {post.share}</div>
-                </div>
             </div>
 
         </div>)

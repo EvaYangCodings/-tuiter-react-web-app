@@ -2,7 +2,6 @@ import React from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {a} from "react-router-dom";
 import { faHome, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 
 import {useLocation} from "react-router";
@@ -22,7 +21,7 @@ const NavigationSidebar = () => {
 
                 <Link to="/tuiter/home" className={`list-group-item
 
-                    ${active === 'home'?'active':''}`}>
+                    ${active === 'home' || active ==='' || paths.length === 2?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faHome}/>
                         <span className="nav-a-text ms-2 d-none d-xl-inline-block">Home</span>
@@ -68,7 +67,7 @@ const NavigationSidebar = () => {
                     </div>
                 </Link>
 
-                <Link to="#" className={`list-group-item
+                <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                     <div>
                         <FontAwesomeIcon icon={faUser}/>
