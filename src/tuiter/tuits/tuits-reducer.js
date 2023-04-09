@@ -28,7 +28,7 @@ const tuitsSlice = createSlice({
         [deleteTuitThunk.fulfilled]:
             (state, {payload}) => {
                 state.loading = false
-                state.tuits = state.tuits.filter(t => t.id !== payload)
+                state.tuits = state.tuits.filter(t => t._id !== payload)
             },
 
         [createTuitThunk.fulfilled]: 
@@ -40,7 +40,7 @@ const tuitsSlice = createSlice({
             (state, {payload}) => {
                 state.loading = false;
                 const tuitNdx = state.tuits.findIndex(
-                    (t) => t.id === payload.id
+                    (t) => t._id === payload._id
                 )
                 state.tuits[tuitNdx] = {
                     ...state.tuits[tuitNdx],
