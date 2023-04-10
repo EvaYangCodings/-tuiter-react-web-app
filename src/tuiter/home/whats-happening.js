@@ -10,7 +10,7 @@ const WhatsHappening = () => {
             tuit:whatsHappening,
         }
 
-        newTuit.image = "/images/nasa.jpeg";
+        newTuit.image = "images/nasa.jpeg";
         dispatch(createTuitThunk(newTuit));
     }
     return (
